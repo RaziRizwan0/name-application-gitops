@@ -34,8 +34,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/name-app:${{ steps.tag.outputs.TAG }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/name-app:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/name-application:${{ steps.tag.outputs.TAG }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/name-application:latest
 
       - name: Update image tag in deployment.yaml
         run: |
