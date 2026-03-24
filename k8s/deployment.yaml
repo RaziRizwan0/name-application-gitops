@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: name-application
+  labels:
+    app: name-application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: name-application
+  template:
+    metadata:
+      labels:
+        app: name-application
+    spec:
+      containers:
+        - name: name-application
+          image: docker.io/raziriz/name-application:latest
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 10
