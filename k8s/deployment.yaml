@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: name-application
-          image: docker.io/raziriz/name-application:placeholder
+          image: docker.io/raziriz/name-app:c01bb1ccc7cb5bd58e37f2d165372b52e1644d9b
           ports:
             - containerPort: 5000
           readinessProbe:
