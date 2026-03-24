@@ -39,7 +39,8 @@ jobs:
 
       - name: Update image tag in deployment.yaml
         run: |
-          sed -i "s|image: docker.io/.*/name-app:.*|image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/name-app:${{ steps.tag.outputs.TAG }}|" k8s/deployment.yaml
+          sed -i "s|image:.*name-app.*|image: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/name-app:${{ steps.tag.outputs.TAG }}|" k8s/deployment.yaml
+          cat k8s/deployment.yaml | grep image
 
       - name: Commit and push updated deployment.yaml
         run: |
