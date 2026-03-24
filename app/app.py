@@ -8,7 +8,7 @@ HTML = """
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Name Storing App</title>
+  <title>razii Name Storing App</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 40px; max-width: 700px; }
     input, button { padding: 10px; font-size: 16px; }
