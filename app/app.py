@@ -8,7 +8,7 @@ HTML = """
 <html>
 <head>
   <meta charset="utf-8">
-  <title>raziioo Name Storing App</title>
+  <title>raziioo Name production App</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 40px; max-width: 700px; }
     input, button { padding: 10px; font-size: 16px; }
@@ -17,13 +17,13 @@ HTML = """
   </style>
 </head>
 <body>
-  <h1>Name Storing ha ha  App</h1>
+  <h1>Name Storing production  App</h1>
   <p>Enter a name and save it raziii haa.</p>
 
   <input id="nameInput" placeholder="Enter name" />
   <button onclick="saveName()">Save</button>
 
-  <h2>Stored ha ha  Names koayyy</h2>
+  <h2>Stored production  Names koayyy</h2>
   <ul id="nameList"></ul>
 
   <script>
