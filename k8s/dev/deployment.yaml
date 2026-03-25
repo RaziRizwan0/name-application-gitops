@@ -2,10 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: name-application
+  namespace: dev
   labels:
     app: name-application
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: name-application
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: name-application
-          image: docker.io/raziriz/name-application:322a5084ab2e14905e4016b0bbe868ca75d9050b
+          image: docker.io/raziriz/name-application:placeholder
           ports:
             - containerPort: 5000
           readinessProbe:
