@@ -17,13 +17,13 @@ HTML = """
   </style>
 </head>
 <body>
-  <h1>Name Storing ha ha  App</h1>
+  <h1>Name Storing stage  App</h1>
   <p>Enter a name and save it raziii haa.</p>
 
   <input id="nameInput" placeholder="Enter name" />
   <button onclick="saveName()">Save</button>
 
-  <h2>Stored ha ha  Names koayyy</h2>
+  <h2>Stored stage  Names koayyy</h2>
   <ul id="nameList"></ul>
 
   <script>
