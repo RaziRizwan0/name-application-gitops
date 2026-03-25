@@ -17,13 +17,13 @@ HTML = """
   </style>
 </head>
 <body>
-  <h1>Name Storing ha ha  App</h1>
+  <h1>Name Storing dev  App</h1>
   <p>Enter a name and save it raziii haa.</p>
 
   <input id="nameInput" placeholder="Enter name" />
   <button onclick="saveName()">Save</button>
 
-  <h2>Stored ha ha  Names koayyy</h2>
+  <h2>Stored dev  Names koayyy</h2>
   <ul id="nameList"></ul>
 
   <script>
@@ -84,3 +84,4 @@ def health():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
 # trigger
+# trigger dev
